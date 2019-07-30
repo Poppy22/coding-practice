@@ -91,7 +91,7 @@ This repo contains problems I solve from Leetcode, Interview Bit and Daily Codin
 ### Sorting
 
 - [ ]  [https://leetcode.com/problems/valid-anagram/description/](https://leetcode.com/problems/valid-anagram/description/)
-- [ ]  [https://leetcode.com/problems/array-partition-i/description/](https://leetcode.com/problems/array-partition-i/description/)
+- [x]  [https://leetcode.com/problems/array-partition-i/description/](https://leetcode.com/problems/array-partition-i/description/)
 - [ ]  [https://leetcode.com/problems/merge-intervals/description/](https://leetcode.com/problems/merge-intervals/description/)
 
 ### Recursion/DP
