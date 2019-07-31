@@ -104,8 +104,8 @@ This repo contains problems I solve from Leetcode, Interview Bit and Daily Codin
 
 ### Linked list
 
-- [ ]  [https://leetcode.com/problems/reverse-linked-list/description/](https://leetcode.com/problems/reverse-linked-list/description/)
-- [ ]  [https://leetcode.com/problems/odd-even-linked-list/description/](https://leetcode.com/problems/odd-even-linked-list/description/)
+- [x]  [https://leetcode.com/problems/reverse-linked-list/description/](https://leetcode.com/problems/reverse-linked-list/description/)
+- [x]  [https://leetcode.com/problems/odd-even-linked-list/description/](https://leetcode.com/problems/odd-even-linked-list/description/)
 - [ ]  [https://leetcode.com/problems/reverse-nodes-in-k-group/description/](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)
 - [ ]  [https://leetcode.com/problems/lru-cache/description/](https://leetcode.com/problems/lru-cache/description/)
 - [x]  [https://leetcode.com/problems/add-two-numbers/description/](https://leetcode.com/problems/lru-cache/description/)
