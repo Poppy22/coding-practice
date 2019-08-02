@@ -39,9 +39,9 @@ This repo contains problems I solve from Leetcode, Interview Bit and Daily Codin
 
 - [x]  [https://leetcode.com/problems/two-sum/](https://leetcode.com/problems/two-sum/)
 - [x]  [https://leetcode.com/problems/valid-anagram/](https://leetcode.com/problems/valid-anagram/)
-- [ ]  [https://leetcode.com/problems/jewels-and-stones/description/](https://leetcode.com/problems/jewels-and-stones/description/)
+- [x]  [https://leetcode.com/problems/jewels-and-stones/description/](https://leetcode.com/problems/jewels-and-stones/description/)
 - [ ]  [https://leetcode.com/problems/unique-morse-code-words/description/](https://leetcode.com/problems/unique-morse-code-words/description/)
-- [ ]  [https://leetcode.com/problems/happy-number/description/](https://leetcode.com/problems/happy-number/description/)
+- [x]  [https://leetcode.com/problems/happy-number/description/](https://leetcode.com/problems/happy-number/description/)
 - [ ]  [https://leetcode.com/problems/uncommon-words-from-two-sentences/description/](https://leetcode.com/problems/uncommon-words-from-two-sentences/description/)
 - [ ]  [https://leetcode.com/problems/distribute-candies/description/](https://leetcode.com/problems/distribute-candies/description/)
 - [ ]  [https://leetcode.com/problems/groups-of-special-equivalent-strings/description/](https://leetcode.com/problems/groups-of-special-equivalent-strings/description/)
@@ -109,7 +109,8 @@ This repo contains problems I solve from Leetcode, Interview Bit and Daily Codin
 - [ ]  [https://leetcode.com/problems/reverse-nodes-in-k-group/description/](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)
 - [ ]  [https://leetcode.com/problems/lru-cache/description/](https://leetcode.com/problems/lru-cache/description/)
 - [x]  [https://leetcode.com/problems/add-two-numbers/description/](https://leetcode.com/problems/lru-cache/description/)
-- [ ]	[https://leetcode.com/problems/merge-two-sorted-lists/description/](https://leetcode.com/problems/merge-two-sorted-lists/)
+- [x]	[https://leetcode.com/problems/merge-two-sorted-lists/description/](https://leetcode.com/problems/merge-two-sorted-lists/)
+- [x]	[https://leetcode.com/problems/linked-list-cycle/description/](https://leetcode.com/problems/linked-list-cycle/submissions/)
 
 ### Stack
 
