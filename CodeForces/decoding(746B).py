@@ -8,12 +8,12 @@ def decode_string(n, encoded):
 	if n % 2 == 0:
 		decoded[n // 2 - 1] = encoded[0]
 		decoded[n // 2] = encoded[1]
-		start = 2 # index for encoded
+		start = 2 # last for encoded
 		left = n // 2 - 2
 		right = n // 2 + 1
 	else:
 		decoded[n // 2] = encoded[0]
-		start = 1 # index for encoded
+		start = 1 # last for encoded
 		left = n // 2 - 1
 		right = n // 2 + 1
 
