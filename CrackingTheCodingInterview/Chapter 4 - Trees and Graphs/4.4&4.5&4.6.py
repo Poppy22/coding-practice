@@ -67,6 +67,9 @@ class BinaryTree:
 
 
 	def dfs(self):
+		if self.root == None:
+			return
+
 		stack = [self.root]
 
 		while len(stack):
@@ -79,6 +82,9 @@ class BinaryTree:
 				stack.append(node.left)
 
 	def bfs(self):
+		if self.root == None:
+			return
+
 		q = [self.root]
 
 		while len(q):
@@ -93,7 +99,8 @@ class BinaryTree:
 	def check_binary_search_tree(self):
 		# if the values are sorted when doing a in order traversal
 		# then it's a binary search tree, OR:
-
+		if self.root == None:
+			return True
 		return self.__check_binary_search_tree_helper(self.root)
 
 
@@ -110,30 +117,115 @@ class BinaryTree:
 
 
 	def compute_height(self):
+		if self.root == None:
+			return 0
 		return self.__compute_height_helper(self.root)
 
 
 	def checked_balance(self):
+		if self.root == None:
+			return True
 		return self.__checked_balance(self.root)
 
 
 	def __compute_height_helper(self, node):
-		pass
+		if node == None:
+			return 0
+		return 1 + max(self.__compute_height_helper(node.left), self.__compute_height_helper(node.right))
 
 
 	def __checked_balance(self, node):
-		pass
+		# for every node check if |h(left) - h(right)| <= 1
+		h_right = self.__compute_height_helper(node.right)
+		h_left = self.__compute_height_helper(node.left)
+
+		if abs(h_right - h_left) > 1:
+			return False
+
+		if node.left != None and node.right != None:
+			return self.__checked_balance(node.left) and self.__checked_balance(node.right)
+		if node.left != None:
+			return not (node.left.left or node.left.right)
+		if node.right != None:
+			return not (node.right.left or node.right.right)
+		return True
+
+
+	def predecessor(self, value):
+		if self.root == None:
+			return None
+
+		node = self.__find_node_by_value(value, self.root)
+		if node == None:
+			return None
+
+		if node.left:
+			return self.__get_maximum(node.left)
+
+		pre = None
+		start = self.root
+		while start != node:
+			if node.value > start.value:
+				pre = start.value # closest node for which the current node is a right child
+				start = start.right
+			else:
+				start = start.left
+
+		return pre
+
+
+	def successor(self, value):
+		if self.root == None:
+			return None
+
+		node = self.__find_node_by_value(value, self.root)
+		if node == None:
+			return None
+
+		if node.right:
+			return self.__get_minimum(node.right)
+
+		succ = None
+		start = self.root
+		while start != node:
+			if node.value < start.value:
+				succ = start.value # closest node for which the current node is a left child
+				start = start.left
+			else:
+				start = start.right
+
+		return succ
+
+
+	def __find_node_by_value(self, value, node):
+		if node.value == value:
+			return node
+		if value < node.value and node.left != None:
+			return self.__find_node_by_value(value, node.left)
+		elif value > node.value and node.right != None:
+			return self.__find_node_by_value(value, node.right)
+		return None
 
 
 	def __get_minimum(self, node):
-		pass
+		if self.root == None:
+			return None
+
+		if node.left == None:
+			return node.value
+
+		return self.__get_minimum(node.left)
 
 
 	def __get_maximum(self, node):
-		pass
+		if self.root == None:
+			return None
 
+		if node.right == None:
+			return node.value
 
-	
+		return self.__get_maximum(node.right)
+
 
 def main():
 	bt = BinaryTree(10)
@@ -151,6 +243,11 @@ def main():
 	bt.dfs()
 	print("___________________")
 	bt.bfs()
+	print("___________________")
+	print(bt.compute_height())
+	print(bt.checked_balance())
+	print(bt.predecessor(10))
+	print(bt.successor(5))
 
 if __name__ == "__main__":
 	main()
