@@ -87,7 +87,7 @@ This repo contains problems I solve from Leetcode, Interview Bit and Daily Codin
 ### Binary search
 
 - [x]  [https://leetcode.com/problems/binary-search/description/](https://leetcode.com/problems/binary-search/description/)
-- [ ]  [https://leetcode.com/problems/peak-index-in-a-mountain-array/description/](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/)
+- [x]  [https://leetcode.com/problems/peak-index-in-a-mountain-array/description/](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/)
 
 ### Sorting
 

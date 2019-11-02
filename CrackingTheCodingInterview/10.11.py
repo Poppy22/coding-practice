@@ -39,3 +39,9 @@ def main():
 
 if __name__ == "__main__":
 	main()
+
+
+
+import operator
+s = sorted(s, key = operator.itemgetter(1, 2))
+
