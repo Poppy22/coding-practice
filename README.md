@@ -1,6 +1,7 @@
 # Interview Practice
 
-This repo contains problems I solve from Leetcode, Interview Bit and Daily Coding Problem in Python3.
+This repo contains problems I solve in Python3 to prepare for interviews.
+Useful resources: [LeetCode](https://leetcode.com), [Daily Coding Problem](https://www.dailycodingproblem.com), CodeForces[http://codeforces.com], Cracking the Coding Interview (book) and Elements of Programming Interviews (book).
 
 ## Leetcode problems statements
 
